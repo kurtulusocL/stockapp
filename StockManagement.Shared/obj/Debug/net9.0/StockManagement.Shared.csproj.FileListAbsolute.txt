@@ -1,0 +1,12 @@
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\bin\Debug\net9.0\StockManagement.Shared.deps.json
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\bin\Debug\net9.0\StockManagement.Shared.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\bin\Debug\net9.0\StockManagement.Shared.pdb
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\StockManagement.Shared.csproj.AssemblyReference.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\StockManagement.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\StockManagement.Shared.AssemblyInfoInputs.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\StockManagement.Shared.AssemblyInfo.cs
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\StockManagement.Shared.csproj.CoreCompileInputs.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\StockManagement.Shared.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\refint\StockManagement.Shared.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\StockManagement.Shared.pdb
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Shared\obj\Debug\net9.0\ref\StockManagement.Shared.dll

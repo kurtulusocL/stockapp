@@ -1,0 +1,355 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
+build_property.RootNamespace = StockManagement.WebUI
+build_property.RootNamespace = StockManagement.WebUI
+build_property.ProjectDir = C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.WebUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.WebUI
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Account/ConfirmMail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtTWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Account/RoleAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSb2xlQXNzaWduLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Account/UpdateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGRhdGVQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Account/VerifyCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlDb2RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Audit/ByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRcQnlVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Audit/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Audit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Audit/WholeAudits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRcV2hvbGVBdWRpdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Category/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Category/WholeCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcV2hvbGVDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/ExceptionLogger/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXB0aW9uTG9nZ2VyXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/ExceptionLogger/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXB0aW9uTG9nZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/ExceptionLogger/WholeLogs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXB0aW9uTG9nZ2VyXFdob2xlTG9ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Home/BadRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYWRSZXF1ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Home/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Home/ServerError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2ZXJFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/OutboxEvent/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0Ym94RXZlbnRcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/OutboxEvent/ErrorEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0Ym94RXZlbnRcRXJyb3JFdmVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/OutboxEvent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0Ym94RXZlbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/OutboxEvent/SuccessfulEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0Ym94RXZlbnRcU3VjY2Vzc2Z1bEV2ZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/OutboxEvent/WholeOutboxEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0Ym94RXZlbnRcV2hvbGVPdXRib3hFdmVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/AddStock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRTdG9jay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/ByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxCeUNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/ByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxCeVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/ByWarehouse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxCeVdhcmVob3VzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/WarningStock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxXYXJuaW5nU3RvY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Product/WholeProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxXaG9sZVByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Role/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Role/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Role/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Role/WholeRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxXaG9sZVJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Shared/_ProductTablePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0VGFibGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Shared/_StockTablePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdG9ja1RhYmxlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/StockMovement/ByProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tNb3ZlbWVudFxCeVByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/StockMovement/ByRange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tNb3ZlbWVudFxCeVJhbmdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/StockMovement/ByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tNb3ZlbWVudFxCeVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/StockMovement/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tNb3ZlbWVudFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/StockMovement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tNb3ZlbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/StockMovement/WholeStockMovements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tNb3ZlbWVudFxXaG9sZVN0b2NrTW92ZW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UnitInStock/ByProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEluU3RvY2tcQnlQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UnitInStock/ByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEluU3RvY2tcQnlVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UnitInStock/ByWarehouse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEluU3RvY2tcQnlXYXJlaG91c2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UnitInStock/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEluU3RvY2tcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UnitInStock/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEluU3RvY2tcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UnitInStock/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEluU3RvY2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UnitInStock/WholeStocks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEluU3RvY2tcV2hvbGVTdG9ja3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UserSession/ByLoginDate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNlc3Npb25cQnlMb2dpbkRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UserSession/ByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNlc3Npb25cQnlVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UserSession/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNlc3Npb25cRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UserSession/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNlc3Npb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UserSession/Offline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNlc3Npb25cT2ZmbGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UserSession/Online.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNlc3Npb25cT25saW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/UserSession/WholeUserSessions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNlc3Npb25cV2hvbGVVc2VyU2Vzc2lvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/User/ByActiveLoginCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCeUFjdGl2ZUxvZ2luQ29kZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/User/ByInActiveLoginCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCeUluQWN0aXZlTG9naW5Db2RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/User/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/User/WholeUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxXaG9sZVVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Warehouse/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Warehouse/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Warehouse/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Warehouse/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Warehouse/WholeWarehouse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXFdob2xlV2FyZWhvdXNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kurtu/OneDrive/Masaüstü/StockManagement/StockManagement.WebUI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4mmwuuforl

@@ -1,0 +1,191 @@
+﻿@model IEnumerable<UserSessionGetDto>
+@{
+	ViewData["Title"] = "Offline User Session List";
+	ViewData["Subtitle"] = "Manage your user session";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4 py-3">
+	<div class="d-flex justify-content-between align-items-center mb-4">
+		<div>
+			<h2 class="fw-bold mb-1">@ViewData["Title"]</h2>
+			<p class="text-muted mb-0">@ViewData["Subtitle"]</p>
+		</div>
+		<a asp-controller="UserSession" asp-action="Index" class="btn btn-primary px-4">
+			User Sessions List
+		</a>
+		<a asp-controller="UserSession" asp-action="WholeUserSessions" class="btn btn-primary px-4">
+			All User Sessions
+		</a>
+		<div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+			<span id="selectedCount" class="text-muted small"></span>
+			<form asp-controller="UserSession" asp-action="DeleteMultiple" method="post" id="bulkDeleteForm" onsubmit="return confirm('Are you sure you want to delete selected sessions?')">
+				@Html.AntiForgeryToken()
+				<div id="bulkDeleteIds"></div>
+				<button type="submit" class="btn btn-sm btn-danger d-none" id="bulkDeleteBtn">
+					<i class="bi bi-trash me-1"></i> Delete Selected
+				</button>
+			</form>
+		</div>
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle px-4" type="button" data-bs-toggle="dropdown">
+				<i class="bi bi-funnel me-1"></i> Navigation
+			</button>
+			<ul class="dropdown-menu">
+				<li>
+					<a class="dropdown-item" asp-controller="UserSession" asp-action="Online">
+						<i class="bi bi-circle-fill text-success me-2"></i> Online
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" asp-controller="UserSession" asp-action="Offline">
+						<i class="bi bi-circle-fill text-danger me-2"></i> Offline
+					</a>
+				</li>
+				<li><hr class="dropdown-divider"></li>
+				<li>
+					<a class="dropdown-item" asp-controller="UserSession" asp-action="ByLoginDate">
+						<i class="bi bi-calendar-event me-2"></i> By Login Date
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="card shadow-sm">
+		<div class="card-body p-0">
+			<div class="table-responsive">
+				<table class="table table-hover align-middle mb-0">
+					<thead class="table-light">
+						<tr>
+							<th class="ps-4">
+								<input type="checkbox" id="selectAll" class="form-check-input" />
+							</th>
+							<th class="ps-4">#</th>
+							<th>User Info</th>
+							<th>Login Date Info</th>
+							<th>Online Status</th>
+							<th>Online Duration</th>
+							<th>Status</th>
+							<th class="text-end pe-4">Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						@if (!Model.Any())
+						{
+							<tr>
+								<td colspan="12" class="text-center py-5 text-muted">
+									<i class="bi bi-inbox fs-3 d-block mb-2"></i>
+									No user session found.
+								</td>
+							</tr>
+						}
+						else
+						{
+							int i = 1;
+							foreach (var item in Model)
+							{
+								<tr>
+									<td class="ps-4">
+										<input type="checkbox" class="form-check-input row-checkbox" value="@item.Id" />
+									</td>
+
+									<td class="ps-4 text-muted">@i</td>
+									<td class="fw-semibold">
+										@if (item.AppUserId != null)
+										{
+											<ul>
+												<li>User Id: @item.AppUserId</li>
+												<li>Username: @item.Username</li>
+											</ul>
+										}
+										else
+										{
+											<span class="badge badge-danger" style="color:black">??</span>
+										}
+									</td>
+									<td class="text-muted">
+										@if (item.LogoutDate != null)
+										{
+											<span>
+												Login:	@item.LoginDate.ToLongDateString() and Logout: @item.LogoutDate.Value.ToLongDateString();
+											</span>
+										}
+										else
+										{
+											<span>
+												Login: @item.LoginDate.ToLiveTurkishDuration();
+											</span>
+										}
+									</td>
+									<td>
+										@if (item.IsOnline)
+										{
+											<span class="badge badge-info" style="color:black">Online</span>
+										}
+										else
+										{
+											<span class="badge badge-warning" style="color:black">Offline</span>
+										}
+									</td>
+									<td>
+										<span>
+											@item.OnlineDurationSeconds.ToTurkishDuration() seconds
+										</span>
+									</td>
+									<td>
+										@if (item.IsActive)
+										{
+											<span class="badge bg-success-subtle text-success px-3 py-2">Active</span>
+											<form asp-controller="UserSession" asp-action="SetInactive" method="post" class="d-inline">
+												@Html.AntiForgeryToken()
+												<input type="hidden" name="id" value="@item.Id" />
+												<button type="submit" class="btn btn-sm btn-warning">Set Inactive</button>
+											</form>
+										}
+										else
+										{
+											<span class="badge bg-danger-subtle text-danger px-3 py-2">Inactive</span>
+											<form asp-controller="UserSession" asp-action="SetActive" method="post" class="d-inline">
+												@Html.AntiForgeryToken()
+												<input type="hidden" name="id" value="@item.Id" />
+												<button type="submit" class="btn btn-sm btn-warning">Set Active</button>
+											</form>
+										}
+										@if (item.IsDeleted)
+										{
+											<span class="badge bg-success-subtle text-danger px-3 py-2">Deleted</span>
+											<form asp-controller="UserSession" asp-action="SetNotDeleted" method="post" class="d-inline">
+												@Html.AntiForgeryToken()
+												<input type="hidden" name="id" value="@item.Id" />
+												<button type="submit" class="btn btn-sm btn-warning">Set Not Deleted</button>
+											</form>
+										}
+										else
+										{
+											<span class="badge bg-danger-subtle text-success px-3 py-2">Not Deleted</span>
+											<form asp-controller="UserSession" asp-action="SetDeleted" method="post" class="d-inline">
+												@Html.AntiForgeryToken()
+												<input type="hidden" name="id" value="@item.Id" />
+												<button type="submit" class="btn btn-sm btn-warning">Set Deleted</button>
+											</form>
+										}
+									</td>
+									<td class="text-end pe-4">
+										<a asp-controller="UserSession" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info me-1" title="Detail">
+											<i class="bi bi-eye"></i>
+										</a>
+										@if (item.AppUserId != null)
+										{
+											<a asp-controller="UserSession" asp-action="ByUser" asp-route-id="@item.AppUserId" class="btn btn-sm btn-outline-primary me-1" title="User Audit">User Audit</a>
+										}
+									</td>
+								</tr>
+								i++;
+							}
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

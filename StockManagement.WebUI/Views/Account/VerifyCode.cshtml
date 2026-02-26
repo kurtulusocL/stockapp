@@ -1,0 +1,44 @@
+﻿@model LoginConfirmCodeDto
+@{
+	ViewData["Title"] = "Verify Code";
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login</title>
+	<link href="~/css/login.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="auth-card">
+		<div class="auth-logo">
+			<i class="bi bi-box-seam"></i>
+		</div>
+		<h1 class="auth-title">@ViewData["Title"]</h1>
+		@if (ViewBag.Error != null)
+		{
+			<div class="alert alert-danger d-flex align-items-center gap-2 py-2 px-3 mb-3" style="font-size:0.875rem;">
+				<i class="bi bi-exclamation-circle-fill"></i>
+				@ViewBag.Error
+			</div>
+		}
+		<form asp-controller="Account" asp-action="VerifyCode" method="post">
+			@Html.AntiForgeryToken()
+			<div class="mb-3">
+				<label asp-for="LoginConfirmCode" class="form-label">Code <span class="text-danger">*</span></label>
+				<input type="text" asp-for="LoginConfirmCode" name="LoginConfirmCode" class="form-control" required />
+				<span asp-validation-for="LoginConfirmCode" class="text-danger small"></span>
+			</div>
+			<input type="hidden" asp-for=Email name="Email" value="@ViewBag.Email" />
+			<button type="submit" class="btn-auth">
+				<i class="bi bi-box-arrow-in-right me-2"></i> Confirm & Login
+			</button>
+		</form>
+	</div>
+</body>
+</html>

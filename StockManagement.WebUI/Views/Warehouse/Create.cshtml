@@ -1,0 +1,61 @@
+﻿@model WarehouseCreateDto
+@{
+	ViewData["Title"] = "Add A New Warehouse";
+	ViewData["Subtitle"] = "Add a new warehouse to the system";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4 py-3">
+	<div class="d-flex justify-content-between align-items-center mb-4">
+		<div>
+			<h2 class="fw-bold mb-1">@ViewData["Title"]</h2>
+			<p class="text-muted mb-0">@ViewData["Subtitle"]</p>
+		</div>
+		<a asp-controller="Warehouse" asp-action="Index" class="btn btn-outline-secondary">
+			<i class="bi bi-arrow-left me-1"></i> Back to Warehouse List
+		</a>
+	</div>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<div class="card shadow-sm">
+				<div class="card-header bg-white py-3">
+					<h6 class="fw-bold mb-0">Warehouse Information</h6>
+				</div>
+				<div class="card-body">
+					<form asp-controller="Warehouse" asp-action="Create" method="post">
+						@Html.AntiForgeryToken()
+						<div class="mb-3">
+							<label asp-for="Name" class="form-label fw-semibold">Warehouse Name <span class="text-danger">*</span></label>
+							<input asp-for="Name" class="form-control" placeholder="warehouse name" required />
+							<span asp-validation-for="Name" class="text-danger small"></span>
+						</div>
+						<div class="mb-3">
+							<label asp-for="Code" class="form-label fw-semibold">Warehouse Code <span class="text-danger">*</span></label>
+							<input asp-for="Code" name="Code" maxlength="3" class="form-control" placeholder="code (3 characters)" required />
+							<span asp-validation-for="Code" class="text-danger small"></span>
+						</div>
+						<div class="mb-3">
+							<label asp-for="TypeOfWarehouse" class="form-label fw-semibold">Warehouse Type <span class="text-danger">*</span></label>
+							<input asp-for="TypeOfWarehouse" name="TypeOfWarehouse" class="form-control" placeholder="warehouse type" required />
+							<span asp-validation-for="TypeOfWarehouse" class="text-danger small"></span>
+						</div>
+						<div class="mb-3">
+							<label asp-for="Address" class="form-label fw-semibold">Warehouse Address <span class="text-danger">*</span></label>
+							<textarea asp-for="Address" name="Address" class="form-control" placeholder="warehouse address" required></textarea>
+							<span asp-validation-for="Address" class="text-danger small"></span>
+						</div>
+						<div class="d-flex gap-2">
+							<button type="submit" class="btn btn-primary px-4"><i class="bi bi-check-lg me-1"></i> Add Warehouse</button>
+							<a asp-controller="Warehouse" asp-action="Index" class="btn btn-outline-secondary px-4">Cancel</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

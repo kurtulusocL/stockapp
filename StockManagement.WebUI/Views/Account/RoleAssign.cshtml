@@ -1,0 +1,71 @@
+﻿@model List<RoleAssignVM>
+@{
+	ViewData["Title"] = "Set Role(s) to User";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4 py-3">
+	<div class="d-flex justify-content-between align-items-center mb-4">
+		<div>
+			<h2 class="fw-bold mb-1">@ViewData["Title"]</h2>
+			<p class="text-muted mb-0">@ViewData["Subtitle"]</p>
+		</div>
+		<a asp-controller="User" asp-action="Index" class="btn btn-primary px-4">
+			<i class="bi bi-plus-lg me-1"></i> User List
+		</a>
+		<a asp-controller="Role" asp-action="Index" class="btn btn-primary px-4">
+			<i class="bi bi-plus-lg me-1"></i> Role List
+		</a>
+	</div>
+	<div class="card shadow-sm">
+		<div class="card-body p-0">
+			<div class="table-responsive">
+				<table class="table table-hover align-middle mb-0">
+					<form asp-controller="Account" asp-action="RoleAssign" method="post">
+						@Html.AntiForgeryToken()
+						<table class="table table-hover">
+							<thead class="table-light">
+								<tr>
+									<th>Select to Role(s)</th>
+									<th>Role Name</th>
+								</tr>
+							</thead>
+							<tbody>
+								@if (!Model.Any())
+								{
+									<tr>
+										<td colspan="12" class="text-center py-5 text-muted">
+											<i class="bi bi-inbox fs-3 d-block mb-2"></i>
+											No role found.
+										</td>
+									</tr>
+								}
+								else
+								{
+									@for (int i = 0; i < Model.Count; i++)
+									{
+										<tr>
+											<td><input type="checkbox" asp-for="@Model[i].HasAssign" /> </td>
+											<td>
+												@Model[i].RoleName
+												<input type="hidden" asp-for="@Model[i].RoleId" />
+												<input type="hidden" asp-for="@Model[i].RoleName" />
+											</td>
+										</tr>
+									}
+									<tr>
+										<td>
+											<button type="submit" class="btn btn-custon-rounded-four btn-primary">Set Role</button>
+											<a asp-controller="User" asp-action="Index" class="btn btn-custon-rounded-four btn-info">User List</a>
+										</td>
+									</tr>
+								}
+								
+							</tbody>
+						</table>
+					</form>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

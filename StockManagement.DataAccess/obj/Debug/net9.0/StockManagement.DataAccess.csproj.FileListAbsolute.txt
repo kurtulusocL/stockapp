@@ -1,0 +1,17 @@
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\bin\Debug\net9.0\StockManagement.DataAccess.deps.json
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\bin\Debug\net9.0\StockManagement.DataAccess.runtimeconfig.json
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\bin\Debug\net9.0\StockManagement.DataAccess.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\bin\Debug\net9.0\StockManagement.DataAccess.pdb
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockManagement.DataAccess.csproj.AssemblyReference.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockManagement.DataAccess.AssemblyInfoInputs.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockManagement.DataAccess.AssemblyInfo.cs
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockManagement.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockManagement.DataAccess.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\refint\StockManagement.DataAccess.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockManagement.DataAccess.pdb
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockManagement.DataAccess.genruntimeconfig.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\ref\StockManagement.DataAccess.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\bin\Debug\net9.0\StockManagement.Domain.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\bin\Debug\net9.0\StockManagement.Domain.pdb
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.DataAccess\obj\Debug\net9.0\StockMan.72626904.Up2Date

@@ -1,0 +1,51 @@
+﻿@model AppRoleCreateDto
+@{
+	ViewData["Title"] = "Add A New Role";
+	ViewData["Subtitle"] = "Add A New Role to System";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4 py-3">
+	<div class="d-flex justify-content-between align-items-center mb-4">
+		<div>
+			<h2 class="fw-bold mb-1">@ViewData["Title"]</h2>
+			<p class="text-muted mb-0">@ViewData["Subtitle"]</p>
+		</div>
+		<a asp-controller="Role" asp-action="Index" class="btn btn-outline-secondary">
+			<i class="bi bi-arrow-left me-1"></i> Back to Role List
+		</a>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-lg-6">
+			<div class="card shadow-sm">
+				<div class="card-header bg-white py-3">
+					<h6 class="fw-bold mb-0">Role Information</h6>
+				</div>
+				<div class="card-body">
+					<form asp-controller="Role" asp-action="Create" method="post">
+						@Html.AntiForgeryToken()
+						<div class="mb-3">
+							<label asp-for="Name" class="form-label fw-semibold">Role Name <span class="text-danger">*</span></label>
+							<input asp-for="Name" class="form-control" placeholder="category name" required />
+							<span asp-validation-for="Name" class="text-danger small"></span>
+						</div>
+						<div class="mb-3">
+							<label asp-for="NormalizedName" class="form-label fw-semibold">Role Normalized Name <span class="text-danger">*</span></label>
+							<input asp-for="NormalizedName" name="NormalizedName" class="form-control" placeholder="normalized name (upper case)" required />
+							<span asp-validation-for="NormalizedName" class="text-danger small"></span>
+						</div>
+						<div class="d-flex gap-2">
+							<button type="submit" class="btn btn-primary px-4"><i class="bi bi-check-lg me-1"></i> Add Role</button>
+							<a asp-controller="Role" asp-action="Index" class="btn btn-outline-secondary px-4">Cancel</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

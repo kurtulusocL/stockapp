@@ -1,0 +1,14 @@
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\bin\Debug\net9.0\StockManagement.Domain.deps.json
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\bin\Debug\net9.0\StockManagement.Domain.runtimeconfig.json
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\bin\Debug\net9.0\StockManagement.Domain.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\bin\Debug\net9.0\StockManagement.Domain.pdb
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\StockManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\StockManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\StockManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\StockManagement.Domain.AssemblyInfo.cs
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\StockManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\StockManagement.Domain.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\refint\StockManagement.Domain.dll
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\StockManagement.Domain.pdb
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\StockManagement.Domain.genruntimeconfig.cache
+C:\Users\kurtu\OneDrive\Masaüstü\StockManagement\StockManagement.Domain\obj\Debug\net9.0\ref\StockManagement.Domain.dll

@@ -1,0 +1,7 @@
+{
+  "StockManagement.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\kurtu\\OneDrive\\Masaüstü\\StockManagement\\StockManagement.API",
+  "StockManagement.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\kurtu\\OneDrive\\Masaüstü\\StockManagement\\StockManagement.Business",
+  "StockManagement.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\kurtu\\OneDrive\\Masaüstü\\StockManagement\\StockManagement.DataAccess",
+  "StockManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\kurtu\\OneDrive\\Masaüstü\\StockManagement\\StockManagement.Domain",
+  "StockManagement.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\kurtu\\OneDrive\\Masaüstü\\StockManagement\\StockManagement.Shared"
+}

@@ -1,0 +1,49 @@
+﻿body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.error-card {
+    text-align: center;
+    padding: 60px 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    max-width: 480px;
+    width: 100%;
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.error-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3436;
+    margin: 16px 0 8px;
+}
+
+.error-desc {
+    color: #636e72;
+    margin-bottom: 32px;
+}
+
+/* Her sayfaya özel renk */
+.error-code.not-found {
+    color: #e74c3c;
+}
+
+.error-code.bad-request {
+    color: #e67e22;
+}
+
+.error-code.server-error {
+    color: #c0392b;
+}

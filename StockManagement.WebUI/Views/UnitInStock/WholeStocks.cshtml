@@ -1,0 +1,60 @@
+﻿@model IEnumerable<UnitInStockGetDto>
+@{
+	ViewData["Title"] = "All Stock List";
+	ViewData["Subtitle"] = "Manage your all stock";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4 py-3">
+	<div class="d-flex justify-content-between align-items-center mb-4">
+		<div>
+			<h2 class="fw-bold mb-1">@ViewData["Title"]</h2>
+			<p class="text-muted mb-0">@ViewData["Subtitle"]</p>
+		</div>
+		<a asp-controller="UnitInStock" asp-action="Index" class="btn btn-primary px-4">
+			Stock List
+		</a>
+		<div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+			<span id="selectedCount" class="text-muted small"></span>
+			<form asp-controller="UnitInStock" asp-action="DeleteMultiple" method="post" id="bulkDeleteForm"
+				  onsubmit="return confirm('Are you sure you want to delete selected stocks?')">
+				@Html.AntiForgeryToken()
+				<div id="bulkDeleteIds"></div>
+				<button type="submit" class="btn btn-sm btn-danger d-none" id="bulkDeleteBtn">
+					<i class="bi bi-trash me-1"></i> Delete Selected
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="card shadow-sm">
+		<div class="card-body p-0">
+			<div id="stockTableContainer">
+				@await Html.PartialAsync("_StockTablePartial", Model)
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+<script>
+	const connection = new signalR.HubConnectionBuilder()
+		.withUrl("https://localhost:7002/stockHub")
+		.withAutomaticReconnect()
+		.build();
+
+	connection.on("ReceiveStockUpdate", function () {
+		refreshStockTable();
+	});
+
+	connection.start()
+		.then(() => console.log("StockHub bağlantısı kuruldu."))
+		.catch(err => console.error("StockHub bağlantı hatası: ", err));
+
+	async function refreshStockTable() {
+		const response = await fetch('/UnitInStock/GetWholeDataPartial');
+		if (response.ok) {
+			const html = await response.text();
+			document.getElementById('stockTableContainer').innerHTML = html;
+			initBulkDelete();
+		}
+	}
+</script>

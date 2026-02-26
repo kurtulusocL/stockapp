@@ -1,0 +1,167 @@
+﻿@model UserSessionGetDto
+@{
+	ViewData["Title"] = "User Session Detail";
+	ViewData["Subtitle"] = "Manage your user session";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4 py-3">
+	<div class="d-flex justify-content-between align-items-center mb-4">
+		<div>
+			<h2 class="fw-bold mb-1">@ViewData["Title"]</h2>
+			<p class="text-muted mb-0">@ViewData["Subtitle"]</p>
+		</div>
+		<div>
+			<a asp-controller="UserSession" asp-action="WholeUserSessions" class="btn btn-info">
+				Whole User Sessions
+			</a>
+			<a asp-controller="UserSession" asp-action="Index" class="btn btn-outline-secondary me-2">
+				<i class="bi bi-arrow-left me-1"></i> Back to User Session List
+			</a>
+		</div>
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle px-4" type="button" data-bs-toggle="dropdown">
+				<i class="bi bi-funnel me-1"></i> Navigation
+			</button>
+			<ul class="dropdown-menu">
+				<li>
+					<a class="dropdown-item" asp-controller="UserSession" asp-action="Online">
+						<i class="bi bi-circle-fill text-success me-2"></i> Online
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" asp-controller="UserSession" asp-action="Offline">
+						<i class="bi bi-circle-fill text-danger me-2"></i> Offline
+					</a>
+				</li>
+				<li><hr class="dropdown-divider"></li>
+				<li>
+					<a class="dropdown-item" asp-controller="UserSession" asp-action="ByLoginDate">
+						<i class="bi bi-calendar-event me-2"></i> By Login Date
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row g-4">
+		<div class="col-md-8">
+			<div class="card shadow-sm">
+				<div class="card-header bg-white py-3">
+					<h6 class="fw-bold mb-0">General Information</h6>
+				</div>
+				<div class="card-body">
+					<dl class="row mb-0">
+						<dt class="col-sm-3 text-muted fw-normal">Session ID</dt>
+						<dd class="col-sm-9 fw-semibold">@Model.Id</dd>
+
+						<dt class="col-sm-3 text-muted fw-normal">User Id</dt>
+						@if (Model.AppUserId != null)
+						{
+							<dd class="col-sm-9 fw-semibold">@Model.AppUserId</dd>
+						}
+						else
+						{
+							<dd class="col-sm-9 fw-semibold">
+								<span class="badge badge-danger">??</span>
+							</dd>
+						}
+
+						<dt class="col-sm-3 text-muted fw-normal">Username</dt>
+						@if (Model.Username != null)
+						{
+							<dd class="col-sm-9 fw-semibold">@Model.Username</dd>
+						}
+						else
+						{
+							<dd class="col-sm-9 fw-semibold">
+								<span class="badge badge-danger" style="color:black">??</span>
+							</dd>
+						}
+
+						<dt class="col-sm-3 text-muted fw-normal">Login Date</dt>
+						<dd class="col-sm-9">@Model.LoginDate.ToLiveTurkishDuration()</dd>
+
+						<dt class="col-sm-3 text-muted fw-normal">Logout Date</dt>
+						@if (Model.LogoutDate != null)
+						{
+							<dd class="col-sm-9 fw-semibold">@Model.LogoutDate.Value.ToLongDateString()</dd>
+						}
+						else
+						{
+							<dd class="col-sm-9 fw-semibold">
+								<span class="badge badge-danger" style="color:black">??</span>
+							</dd>
+						}
+
+						<dt class="col-sm-3 text-muted fw-normal">Online Status</dt>
+						@if (Model.IsOnline)
+						{
+							<dd class="col-sm-9">Online</dd>
+						}
+						else
+						{
+							<dd class="col-sm-9">Offline</dd>
+						}
+
+						<dt class="col-sm-3 text-muted fw-normal">Online Duration Time</dt>
+						<dd class="col-sm-9">@Model.OnlineDurationSeconds.ToTurkishDuration() seconds</dd>
+
+						<dt class="col-sm-3 text-muted fw-normal">Status</dt>
+						<dd class="col-sm-9">
+							@if (Model.IsActive)
+							{
+								<span class="badge bg-success-subtle text-success px-3 py-2">Active</span>
+							}
+							else
+							{
+								<span class="badge bg-danger-subtle text-danger px-3 py-2">Inactive</span>
+							}
+							@if (Model.IsDeleted)
+							{
+								<span class="badge bg-success-subtle text-danger px-3 py-2">Deleted</span>
+							}
+							else
+							{
+								<span class="badge bg-danger-subtle text-success px-3 py-2">Not Deleted</span>
+							}
+						</dd>
+
+						<dt class="col-sm-3 text-muted fw-normal">Created At</dt>
+						<dd class="col-sm-9">@Model.CreatedDate.ToString("dd MMM yyyy, HH:mm")</dd>
+
+						<dt class="col-sm-3 text-muted fw-normal">Updated At</dt>
+						<dd class="col-sm-9">
+							@(Model.UpdatedDate.HasValue? Model.UpdatedDate.Value.ToString("dd MMM yyyy, HH:mm") : "-")
+						</dd>
+
+						<dt class="col-sm-3 text-muted fw-normal">Suspended At</dt>
+						<dd class="col-sm-9">
+							@(Model.SuspendedDate.HasValue? Model.SuspendedDate.Value.ToString("dd MMM yyyy, HH:mm") : "-")
+						</dd>
+
+						<dt class="col-sm-3 text-muted fw-normal">Deleted At</dt>
+						<dd class="col-sm-9">
+							@(Model.DeletedDate.HasValue? Model.DeletedDate.Value.ToString("dd MMM yyyy, HH:mm") : "-")
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card shadow-sm">
+				<div class="card-header bg-white py-3">
+					<h6 class="fw-bold mb-0">Actions</h6>
+				</div>
+				<div class="card-body d-grid gap-2">
+					<form asp-controller="UserSession" asp-action="Delete" method="post" onsubmit="return confirm('Are you sure you want to delete')">
+						@Html.AntiForgeryToken()
+						<input type="hidden" name="id" value="@Model.Id" />
+						<button type="submit" class="btn btn-outline-danger w-100">
+							<i class="bi bi-trash me-2"></i> Delete Session
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

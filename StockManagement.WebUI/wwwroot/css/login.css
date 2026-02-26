@@ -1,0 +1,111 @@
+﻿
+body {
+    background: linear-gradient(135deg, #1e3a5f, #2d6a9f);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+}
+
+.auth-logo {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1e3a5f, #2d6a9f);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+    .auth-logo i {
+        font-size: 28px;
+        color: #fff;
+    }
+
+.auth-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.auth-subtitle {
+    font-size: 0.875rem;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 1px solid #dee2e6;
+    font-size: 0.9rem;
+}
+
+    .form-control:focus {
+        border-color: #2d6a9f;
+        box-shadow: 0 0 0 0.2rem rgba(45, 106, 159, 0.15);
+    }
+
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.btn-auth {
+    background: linear-gradient(135deg, #1e3a5f, #2d6a9f);
+    border: none;
+    border-radius: 8px;
+    padding: 11px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #fff;
+    width: 100%;
+    transition: opacity 0.2s;
+}
+
+    .btn-auth:hover {
+        opacity: 0.9;
+        color: #fff;
+    }
+
+.input-group-text {
+    border-radius: 0 8px 8px 0;
+    background: #f8f9fa;
+    border-color: #dee2e6;
+    cursor: pointer;
+}
+
+.input-group .form-control {
+    border-radius: 8px 0 0 8px;
+}
+
+.divider {
+    border-top: 1px solid #e9ecef;
+    margin: 24px 0;
+}
+
+.auth-link {
+    color: #2d6a9f;
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .auth-link:hover {
+        text-decoration: underline;
+        color: #1e3a5f;
+    }
